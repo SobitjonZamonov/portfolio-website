@@ -1,0 +1,111 @@
+.education-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0A061D;
+    padding: 2rem 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 5rem;
+    padding: 0 1rem;
+}
+
+@media screen and ( min-width: 768px ) {
+    .education-container  {
+        padding: 2rem 4rem;
+    }
+
+}
+
+.tittle {
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+}
+
+.education-1 {
+    display: flex;
+    gap: 350px;
+    border: 1px solid white;
+    padding-inline: 120px;
+    padding-block: 50px;
+}
+
+.glow-on-hover1 {
+    width: 140px;
+    height: 50px;
+    margin-top: 40px;
+    border: 1px solid white;
+    font-weight: 600;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover1:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover1:active {
+    color: #000
+}
+
+.glow-on-hover1:active:after {
+    background: transparent;
+}
+
+.glow-on-hover1:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover1:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0A061D;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

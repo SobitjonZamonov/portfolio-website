@@ -1,0 +1,288 @@
+.glow-on-hover1 {
+    width: 140px;
+    height: 50px;
+    margin-top: 40px;
+    border: 1px solid white;
+    font-weight: 600;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover1:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover1:active {
+    color: #000
+}
+
+.glow-on-hover1:active:after {
+    background: transparent;
+}
+
+.glow-on-hover1:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover1:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0A061D;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.glow-on-hover2 {
+    width: 100px;
+    height: 50px;
+    margin-top: 40px;
+    border: 1px solid white;
+    font-weight: 600;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover2:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover2:active {
+    color: #000
+}
+
+.glow-on-hover2:active:after {
+    background: transparent;
+}
+
+.glow-on-hover2:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover2:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0A061D;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+/* ///////////////////////// */
+
+#stars,
+#stars:after {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    position: absolute;
+    content: " ";
+    box-shadow:
+        1234px 456px #FFF, 678px 1234px #FFF, 432px 1567px #FFF,
+        890px 321px #FFF, 654px 1890px #FFF, 987px 1111px #FFF,
+        1123px 987px #FFF, 1345px 1543px #FFF, 1765px 345px #FFF,
+        1999px 1432px #FFF, 300px 1200px #FFF, 1723px 1145px #FFF;
+    animation: animStar 50s linear infinite;
+}
+
+#stars:after {
+    top: 2000px;
+}
+
+#stars2,
+#stars2:after {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    position: absolute;
+    content: " ";
+    box-shadow:
+        223px 723px #FFF, 853px 1450px #FFF, 112px 690px #FFF,
+        390px 131px #FFF, 954px 890px #FFF, 787px 1511px #FFF,
+        623px 180px #FFF, 1455px 743px #FFF, 1265px 845px #FFF;
+    animation: animStar 100s linear infinite;
+}
+
+#stars2:after {
+    top: 2000px;
+}
+
+#stars3,
+#stars3:after {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    position: absolute;
+    content: " ";
+    box-shadow:
+        100px 200px #FFF, 300px 400px #FFF, 500px 600px #FFF,
+        700px 800px #FFF, 900px 1000px #FFF, 1100px 1200px #FFF;
+    animation: animStar 150s linear infinite;
+}
+
+#stars3:after {
+    top: 2000px;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-top: -60px;
+    padding-left: 10px;
+}
+
+#title span {
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+/* /////////////////// */
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    font-size: 34px;
+    font-weight: 600;
+    color: #fff;
+    animation:
+        typing 3s steps(15, end),
+        blink-caret .75s step-end infinite;
+}
+
+@media screen and ( min-width: 768px ) {
+    .typewriter h1 {
+        font-size: 45px;
+    }
+    
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #744FF7;
+    }
+}
+
+
+
+.typed-out{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 
+      typing 3s forwards;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 75% }
+  }

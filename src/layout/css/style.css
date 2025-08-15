@@ -1,0 +1,12 @@
+.phone-number a {
+    font-weight: 600;
+    font-size: 21px;
+    color: white;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .phone-number a {
+        display: flex;
+    }
+}
