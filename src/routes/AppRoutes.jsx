@@ -8,8 +8,6 @@ import Projects from "../pages/Projects/Projects";
 import Education from "../pages/Education/Education";
 import Notfound from "../pages/Not-found/Notfound.jsx";
 
-
-
 const AppRoutes = () => {
     return (
         <Routes>

@@ -13,7 +13,7 @@ const skillsData = {
         { name: "HTML", level: 90 },
         { name: "CSS", level: 80 },
         { name: "JavaScript", level: 65 },
-        { name: "Python", level: 75 },
+        { name: "Python", level: 60 },
     ],
     professional: [
         { name: "Web Design", level: 95 },
