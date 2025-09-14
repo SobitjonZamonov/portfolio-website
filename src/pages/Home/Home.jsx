@@ -24,7 +24,7 @@ const Home = () => {
                 <p className="text-2xl md:text-4xl text-white mt-4">Frontend Developer</p>
 
                 <p className="text-white text-base md:text-lg mt-4 leading-relaxed">
-                    My name is Sobitjon Zamonov, a 17-year-old passionate Full-Stack
+                    My name is Sobitjon Zamonov, a 18-year-old passionate Full-Stack
                     Developer with hands-on experience in building dynamic and responsive
                     web applications using <strong>Node.js</strong>, <strong>React.js</strong>, <strong>NestJS</strong>, and <strong>Next.js</strong>.
                     In addition to my full-stack expertise, I have a solid understanding
